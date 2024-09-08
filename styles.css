@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--cream);
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin: 30px auto;
+  padding: 0 30px;
+}
+.grid {
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.img img {
+  max-width: 100%;
+  display: inherit;
+}
+.card-content {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+}
+.pro-name {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  line-height: 1em;
+  color: var(--very-dark-blue);
+}
+.pro-des {
+  color: var(--dark-grayish-blue);
+  line-height: 1.6em;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+p.current-price {
+  font-family: "Fraunces", serif;
+  color: var(--dark-cyan);
+  font-size: 25px;
+  padding-right: 25px;
+}
+p.old-price {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+}
+button.cta{
+    background-color: var(--dark-cyan);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+button.cta img{
+    padding-right: 5px;
+}
+button.cta:hover{
+    background-color: hsl(158, 36%, 25%); 
+}
